@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - The Sonic Waves</title>
+    <style>
+        body {
+            background-color: #e0f7fa; /* Light cyan background */
+            margin: 0;
+            font-family: 'Arial', sans-serif; /* Modern font */
+        }
+        nav {
+            background-color: #00796b; /* Teal background for the navigation bar */
+            padding: 15px; /* Reduced padding */
+            display: flex; 
+            justify-content: space-around; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Enhanced shadow effect */
+        }
+        nav a {
+            text-decoration: none; 
+            color: #ffffff; 
+            font-weight: bold; 
+            transition: color 0.3s, transform 0.3s; /* Added transform transition */
+        }
+        nav a:hover {
+            color: #ffeb3b; /* Bright yellow on hover */
+            transform: scale(1.1); /* Slightly scale on hover */
+        }
+        #faq-section {
+            background-color: #b2ebf2; /* Light cyan background for FAQ section */
+            border-radius: 20px; /* More rounded corners */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow effect */
+            padding: 40px; /* Increased padding */
+            margin: 40px; /* Increased margin */
+            text-align: center; 
+        }
+        h1 {
+            color: #004d40; /* Darker teal color for headings */
+            margin-bottom: 20px; 
+        }
+        .faq {
+            background-color: #ffffff; 
+            border-radius: 10px; /* More rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+            padding: 20px; /* Increased padding */
+            margin: 15px 0; /* Increased margin */
+            transition: max-height 0.3s ease, box-shadow 0.3s; /* Transition for expanding */
+            overflow: hidden; /* Hide overflow for collapsing effect */
+        }
+        .faq-header {
+            cursor: pointer; /* Pointer cursor for clickable header */
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px; 
+            background-color: #00796b; /* Teal background for header */
+            color: #ffffff; 
+            border-radius: 10px; /* Rounded corners */
+            transition: background-color 0.3s; /* Transition for background color */
+        }
+        .faq-header:hover {
+            background-color: #004d40; /* Darker teal on hover */
+        }
+        .faq-content {
+            max-height: 0; /* Initially collapsed */
+            transition: max-height 0.3s ease; /* Smooth transition */
+            padding: 0 10px; /* Padding for content */
+            color: #333; 
+            line-height: 1.6; /* Improved readability */
+        }
+        .faq.open .faq-content {
+            max-height: 200px; /* Adjust based on content */
+            padding: 10px; /* Padding when open */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="template1.html">Home</a> <!-- Redirects to template1 -->
+        <a href="template1.html">About</a> <!-- Redirects to template1 -->
+        <a href="template1.html">Achievements</a> <!-- Redirects to template1 -->
+        <a href="template1.html">Projects</a> <!-- Redirects to template1 -->
+        <a href="template1.html">Contact</a> <!-- Redirects to template1 -->
+        <a href="template1.html">Technology used</a> <!-- Redirects to template1 -->
+    </nav>
+    <div id="faq-section">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq" onclick="toggleFAQ(this)">
+            <div class="faq-header">
+                <span>What is our job?</span>
+                <span>+</span>
+            </div>
+            <div class="faq-content">
+                <p>We build various portfolio websites of different genre</p>
+            </div>
+        </div>
+        <div class="faq" onclick="toggleFAQ(this)">
+            <div class="faq-header">
+                <span>How can I contact?</span>
+                <span>+</span>
+            </div>
+            <div class="faq-content">
+                <p>You can contact us through our github profiles</p>
+            </div>

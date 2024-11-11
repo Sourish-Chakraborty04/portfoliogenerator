@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Generator</title>
+    <style>
+        body {
+            background-color: rgb(192, 255, 230);
+            margin: 0;
+            font-family: Arial, sans-serif; /* Add a font family */
+        }
+        nav {
+            background-color: white; /* Background color for the navigation bar */
+            padding: 30px; /* Padding of 30 pixels */
+            display: flex; 
+            justify-content: space-around; /* Space out items evenly */
+        }
+        nav a {
+            text-decoration: none; /* Remove underline from links */
+            color: black; 
+            font-weight: bold; 
+        }
+        #home, #about {
+            background-color: rgb(253, 251, 251); /* White background for the sections */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(123, 10, 222, 0.856); /* Shadow effect */
+            padding: 40px; /* Add padding */
+            margin: 20px; /* Margin around sections */
+            text-align: center; /* Center text */
+            transition: transform 0.3s ease; /* Transition for hover effect */
+        }
+        #home:hover, #about:hover {
+            transform: scale(1.02); /* Slightly scale up on hover */
+        }
+        h1 {
+            color: #333; /* Dark color for headings */
+            margin-bottom: 20px; /* Space below the heading */
+            text-align: center;
+        }
+        p {
+            color: #555; /* Slightly lighter color for text */
+            line-height: 1.5; /* Improve readability */
+        }
+        #portfolio {
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            padding: 20px; /* Add some padding around the portfolio section */
+        }
+        .project {
+            background-color: white; /* White background for the drop box */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            padding: 20px; /* Padding inside the drop box */
+            margin: 10px; /* Margin between projects */
+            text-align: center; /* Center text */
+            position: relative; /* Position relative for dropdown */
+        }
+        .dropdown {
+            opacity: 0; /* Start with an opacity of 0 */
+            visibility: hidden; /* Start with visibility hidden */
+            position: absolute; 
+            background-color: white;
+            border: 1px solid #ccc; 
+            padding: 10px; 
+            z-index: 1; 
+            width: 100%; /* Change width to 100% */
+            transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition for both opacity and visibility */
+        }
+        .project:hover .dropdown {
+            opacity: 1; /* Change opacity to 1 on hover */
+            visibility: visible; /* Change visibility to visible on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#Technology">Technology used</a>
+    </nav>
+    <!--create a home page-->
+    <div id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p><i>I'm a web developer, graphic designer, and digital artist. I specialize in creating visually appealing and user-friendly websites.</i></p>
+        <a href="#about"><b>Learn more</b></a>
+    </div>
+    <!--create an about page-->
+    <div id="about">
+        <h1>About Me</h1>
+        <p><i>I'm a passionate and dedicated web developer with a background in graphic design. My goal is to create high-quality, user-friendly websites that enhance the lives of individuals and businesses.</i></p>
+        <a href="#portfolio"><b>View my portfolio</b></a>
+    </div>
+   <!--create a portfolio page-->
+    <div id="portfolio">
+        <div class="project">
+            <a href="#"><img src="assets/bottle.jpg" width="220" style="border-radius: 30%;"><br>Project 1<br></a>
+            <div class="dropdown">
+                <p>Details about Project 1.</p>
+                <p><a href="#">View More</a></p>
+            </div>
+        </div>
+        <div class="project">
+            <a href="template2.html"><img src="assets/mountain.jpg" width="220" style="border-radius: 30%;"><br>Project 2<br></a>
+            <div class="dropdown">
+                <p>Details about Project 2.</p>
+                <p><a href="#">View More</a></p>
+            </div>
+        </div>
+        <div class="project">
+             <a href="template3.html"><img src="assets/tree.jpg" width="220" style="border-radius: 30%;"><br>Project 3<br></a>
+                <div class="dropdown">
+                    <p>Details about Project 3.</p>
+                    <p><a href="#">View More</a></p>
+                </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--create an about page-->
+    <div id="Technology">   
+            <h1>Technology Used</style></h1>
+                <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s">
+                <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfkMYb955fj7IRiw-8g6gmn5GoZzKni1Kv8g&s">
+                <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvuLWERwi90PN2IoCWdskisemYu8k1R1CxtA&s">
+            <a href="#Technology"><b></b></a>
+        </div>
+    </div>
